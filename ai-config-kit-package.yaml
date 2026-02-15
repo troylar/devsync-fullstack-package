@@ -49,6 +49,10 @@ components:
     - name: gitignore
       file: resources/.gitignore
       description: Fullstack .gitignore for Python + Node projects
+      checksum: sha256:c76a63231b673aa6323faeccfd385997fa16edbd0d10146e5f7534dac646bee1
+      size: 744
     - name: editorconfig
       file: resources/.editorconfig
       description: Shared editor configuration
+      checksum: sha256:0e341653cd15c3012b5d096bbd7afb7efb98d1ddebc2ed37e5f7014347a197a3
+      size: 429
