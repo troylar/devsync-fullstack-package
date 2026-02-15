@@ -30,24 +30,24 @@ A DevSync configuration package providing development standards for teams buildi
 
 ## Installation
 
-Install the package using the `aiconfig` CLI:
+Install the package using the `devsync` CLI:
 
 ```bash
-aiconfig package install ./devsync-fullstack-package --ide claude
+devsync package install ./devsync-fullstack-package --ide claude
 ```
 
 To install for a different IDE:
 
 ```bash
-aiconfig package install ./devsync-fullstack-package --ide cursor
-aiconfig package install ./devsync-fullstack-package --ide windsurf
-aiconfig package install ./devsync-fullstack-package --ide copilot
+devsync package install ./devsync-fullstack-package --ide cursor
+devsync package install ./devsync-fullstack-package --ide windsurf
+devsync package install ./devsync-fullstack-package --ide copilot
 ```
 
 To overwrite existing files during installation:
 
 ```bash
-aiconfig package install ./devsync-fullstack-package --ide claude --conflict overwrite
+devsync package install ./devsync-fullstack-package --ide claude --conflict overwrite
 ```
 
 ## IDE Compatibility
@@ -69,13 +69,13 @@ For the fullest experience, use Claude Code which supports all component types. 
 List installed packages:
 
 ```bash
-aiconfig package list
+devsync package list
 ```
 
 Uninstall this package:
 
 ```bash
-aiconfig package uninstall fullstack-dev-kit
+devsync package uninstall fullstack-dev-kit
 ```
 
 ## Requirements
