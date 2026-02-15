@@ -1,0 +1,54 @@
+name: fullstack-dev-kit
+version: 1.0.0
+description: Fullstack development standards for TypeScript/React + Python API teams
+author: DevSync Examples
+license: MIT
+namespace: troylar/devsync-fullstack-package
+
+components:
+  instructions:
+    - name: react-patterns
+      file: instructions/react-patterns.md
+      description: React patterns with functional components, hooks, and TypeScript
+      tags: [react, typescript, frontend]
+    - name: api-design
+      file: instructions/api-design.md
+      description: REST API conventions, error handling, and versioning
+      tags: [api, rest, backend]
+    - name: database-patterns
+      file: instructions/database-patterns.md
+      description: Database migrations, query patterns, and ORM conventions
+      tags: [database, orm, migrations]
+
+  mcp_servers:
+    - name: postgres
+      file: mcp/postgres.json
+      description: PostgreSQL MCP server for database operations
+      credentials:
+        - name: DATABASE_URL
+          description: PostgreSQL connection string
+          required: true
+    - name: filesystem
+      file: mcp/filesystem.json
+      description: Filesystem MCP server for project navigation
+      credentials: []
+
+  hooks:
+    - name: pre-commit
+      file: hooks/pre-commit.sh
+      description: Lint and type-check frontend and backend before commits
+      hook_type: pre-commit
+
+  commands:
+    - name: dev
+      file: commands/dev.md
+      description: Start frontend and backend development servers
+      command_type: slash
+
+  resources:
+    - name: gitignore
+      file: resources/.gitignore
+      description: Fullstack .gitignore for Python + Node projects
+    - name: editorconfig
+      file: resources/.editorconfig
+      description: Shared editor configuration
